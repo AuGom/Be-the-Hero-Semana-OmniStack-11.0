@@ -28,7 +28,7 @@ export default function Profile() {
 
   async function handleDeleteIncident(id) {
     try {
-      await api.delete("incidents/" + id, {
+      await api.delete(`incidents/${id}`, {
         headers: {
           Authorization: ngoId
         }
